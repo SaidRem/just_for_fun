@@ -1,4 +1,7 @@
-# Size: 7 x 21
+#     The script writes 'WELCOME' in the center
+#     The design pattern:
+#
+#     Size: 7 x 21
 #     ---------.|.---------
 #     ------.|..|..|.------
 #     ---.|..|..|..|..|.---
