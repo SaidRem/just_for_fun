@@ -13,20 +13,20 @@
 
 from collections import OrderedDict
 
-ord_dict = OrderedDict()
+# ord_dict = OrderedDict()
 
-num = int(input())
+# num = int(input())
 
-for _ in range(num):
-    item, price = input().split()
-    price = int(price)
-    if ord_dict.get(item):
-        ord_dict[item] += price
-    else:
-        ord_dict[item] = price
+# for _ in range(num):
+#     item, price = input().split()
+#     price = int(price)
+#     if ord_dict.get(item):
+#         ord_dict[item] += price
+#     else:
+#         ord_dict[item] = price
 
-for item in ord_dict:
-    print(item, ord_dict[item], sep=' ')
+# for item in ord_dict:
+#     print(item, ord_dict[item], sep=' ')
 
 
 ord_dict = OrderedDict()
