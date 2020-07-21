@@ -10,7 +10,11 @@
 # Print the different combinations of string S on separate lines.
 
 from itertools import combinations
-
+# itertools.combinations returns the r length subsequences of elements from
+# the input iterable.
+# Cobinations are emitted in lexicographic sorted order. So, if the input
+# iterabel is sorted, the combination tuples will be produced in sorted
+# order.
 s, c = input().split()
 
 s, c = input().split()
