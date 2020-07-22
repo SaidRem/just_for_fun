@@ -10,7 +10,8 @@
 # Print out the space separated elements of deque d.
 
 from collections import deque
-
+# A deque is a double ended queue. It can be used to add or remove
+# elements from both ends.
 d = deque()
 
 
