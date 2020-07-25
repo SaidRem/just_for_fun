@@ -5,7 +5,9 @@
 
 a = int(input())
 b = int(input())
-
+# divmod is one of the built-in functions, which takes two
+# arguments and returns a tuple (x // y, x * y).
+# Invariant: div * y + mod == x.
 result = divmod(a, b)
 
 print(result[0], result[1], result, sep='\n')
