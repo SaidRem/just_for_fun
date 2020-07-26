@@ -24,3 +24,9 @@ for room in rooms:
     single.add(room) if room not in single else multy.add(room)
 
 print(single.difference(multy).pop())
+
+# Another version with math logic
+
+# k, arr = int(input()), list(map(int, input().split()))
+# myset = set(arr)
+# print(((sum(myset)*k) - (sum(arr)))//(k-1))
