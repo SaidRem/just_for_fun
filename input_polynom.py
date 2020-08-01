@@ -7,6 +7,13 @@
 # Output format
 # Print True if P(x) = k. Otherwise, print False
 
+# Sample input
+# 1 4
+# x**3 + x**2 + x + 1
+
+# Sample output
+# True
+
 x, k = map(float, input().split())
 
 result = eval(input())
