@@ -18,3 +18,12 @@ x, k = map(float, input().split())
 
 result = eval(input())
 print(result == k)
+
+# The eval() built-in function helps evaluating an expression.
+# The expression can be a Python statement, or a code object.
+
+# expression = input()
+# eval(expression)
+
+# Sample input: print(2 + 3)
+# Sample output: 5
