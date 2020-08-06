@@ -1,4 +1,6 @@
 # Tic Tac Toe game.
+# Rules are simple: two person marks 9 cells in their turn.
+# The winner is the one with a match in a row or diagonally.
 
 def get_blank_board():
     """Create a new, blank tic tac toe board."""
