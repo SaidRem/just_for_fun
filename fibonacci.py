@@ -5,14 +5,10 @@
 
 
 def fibonacci(n):
-    fib = [0, 1]
-    i = 0
-    j = 1
-    if n <= 2:
-        return fib[:n]
-    for i in range(n-2):
-        fib.append(fib[i] + fib[i+1])
-    return fib
+    fib_start = [0, 1]
+    for i in range(2, n):
+        fib_start.append(fib_start[i-2] + fib_start[i-1])
+    return fib_start[:n]
 
 
 if __name__ == '__main__':
