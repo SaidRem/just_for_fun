@@ -1,5 +1,5 @@
 
-# Decorate with function
+# Decorate with function.
 def decorator_func(orig_func):
     def wrapper_func(*args, **kwargs):
         print('Wrapper_func runs before orig_func '
@@ -8,7 +8,7 @@ def decorator_func(orig_func):
         orig_func(*args, **kwargs)
     return wrapper_func
 
-# Decorate with class
+# Decorate with class.
 class decorator_class():
     def __init__(self, orig_func):
         self.orig_func = orig_func
@@ -18,11 +18,12 @@ class decorator_class():
               f'{self.orig_func.__name__}')
         self.orig_func(*args, **kwargs)
 
+# Decorate function with function decorator.
 @decorator_func
 def display():
     print('display runs')
 
-
+# Decorate function with class decorator.
 @decorator_class
 def display_info(name, age):
     print(f'display_info runs with name: {name}, age: {age}')
