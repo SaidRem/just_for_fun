@@ -1,3 +1,4 @@
+# import logging and timer modules to log and time functions
 import logging
 import timer
 
@@ -14,7 +15,7 @@ def logger_decor(orig_f):
         return orig_f(*args, **kwargs)
     return wrapper
 
-
+# This decorator calculates how long functions run.
 def timer_decor(orig_f):
     def wrapper(*args, **kwargs):
         t1 = time.time()
