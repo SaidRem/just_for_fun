@@ -1,3 +1,4 @@
+# Decorators wraps a function and changes its behavior.
 # import logging and timer modules to log and time functions
 import logging
 import timer
