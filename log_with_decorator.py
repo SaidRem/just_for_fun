@@ -9,7 +9,7 @@ def logger_decor(orig_f):
     logging.basicConfig(filename='{}.log'.format(orig_f.__name__),
                         level=logging.INFO)
     
-    @wraps(orig_f)
+    @wraps(orig_f)    # Use wraps from functools to display original function.
     def wrapper(*args, **kwargs):
         logging.info(
             'The function ran with args: {}, and kwargs: {}'.format(args,
@@ -18,10 +18,10 @@ def logger_decor(orig_f):
         return orig_f(*args, **kwargs)
     return wrapper
 
-# This decorator calculates how long functions run.
+# This decorator calculates how long a function runs.
 def timer_decor(orig_f):
     
-    @wraps(orig_f)
+    @wraps(orig_f)    # Use wraps from functools to display original function.
     def wrapper(*args, **kwargs):
         t1 = time.time()
         result = orig_f(*args, **kwargs)
@@ -31,5 +31,6 @@ def timer_decor(orig_f):
     return wrapper
 
 @logger_decor
+@timer_decor
 def display(name, age):
     print('display func ran with arguments ({}, {})'.format(name, age))
