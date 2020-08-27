@@ -8,7 +8,8 @@ from functools import wraps
 def logger_decor(orig_f):
     logging.basicConfig(filename='{}.log'.format(orig_f.__name__),
                         level=logging.INFO)
-    @wraps()
+    
+    @wraps(orig_f)
     def wrapper(*args, **kwargs):
         logging.info(
             'The function ran with args: {}, and kwargs: {}'.format(args,
@@ -19,7 +20,8 @@ def logger_decor(orig_f):
 
 # This decorator calculates how long functions run.
 def timer_decor(orig_f):
-    @wraps()
+    
+    @wraps(orig_f)
     def wrapper(*args, **kwargs):
         t1 = time.time()
         result = orig_f(*args, **kwargs)
