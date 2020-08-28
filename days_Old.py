@@ -1,8 +1,9 @@
+
 '''
 
 The script takes your birthday and the current date and
 calculates your age in days.
-Account for leap days.
+Account for leap days. Calc without using built-in functions.
 '''
 
 Month_in_leapy = (0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
