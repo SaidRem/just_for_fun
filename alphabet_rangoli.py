@@ -1,3 +1,5 @@
+# Rangoli is an art form, in patterns are created on the floor or
+# the ground using quartz powder.
 '''
 # size 3
 
