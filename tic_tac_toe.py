@@ -57,24 +57,24 @@ def update_board(board, space, mark):
 def main():
     """Runs the game."""
     game_board = get_blank_board()  # Create a board dictionary.
-    current_player, next_player = "X", "O"
-
-    while True:
+    current_player, next_player = "X", "O"    # "X" - first player, "O" - second player. 
+    # Create loop that asks players until they enter a number.
+    while True:    
         print(get_board_string(game_board))
         move = None
         while not is_valid_space(game_board, move):
             print(f'What is {current_player} move? (1-9)')
             move = int(input())
         update_board(game_board, move, current_player)
-        if is_winner(game_board, current_player):
+        if is_winner(game_board, current_player):    # Checks for victory.
             print(get_board_string(game_board))
             print(current_player + ' has won the game!')
             break
-        elif is_board_full(game_board):
+        elif is_board_full(game_board):     # Checks for a tie.
             print(get_board_string(game_board))
             print('The game is a tie!')
             break
-        current_player, next_player = next_player, current_player
+        current_player, next_player = next_player, current_player    # Swaps turns of the players.
     print('THE END')
 
 
