@@ -4,7 +4,7 @@
 
 def get_blank_board():
     """Create a new, blank tic tac toe board."""
-    board = {}
+    board = {}   # Let's represent the board as a dictionary.
     for space in range(1, 10):
         board[space] = ' '  # All spaces start as blank.
     return board
