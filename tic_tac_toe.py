@@ -37,8 +37,7 @@ def is_winner(board, player):
             (board[2] == board[5] == board[8] == player) or
             (board[3] == board[6] == board[9] == player) or
             (board[3] == board[5] == board[7] == player) or
-            (board[1] == board[5] == board[9] == player)
-            )
+            (board[1] == board[5] == board[9] == player))
 
 
 def is_board_full(board):
@@ -79,4 +78,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main()    # Call main function to run the game. Works when the module not imported.
