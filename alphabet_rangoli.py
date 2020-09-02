@@ -1,5 +1,8 @@
 # Rangoli is an art form, in patterns are created on the floor or
-# the ground using quartz powder.
+# the ground using quartz powder materials such as colored rice,
+# colored sand or flower petals.
+# Rangoli originated in India.
+# 
 '''
 # size 3
 
