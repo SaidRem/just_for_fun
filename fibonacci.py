@@ -1,3 +1,5 @@
+# Fibonacci numbers is such sequence in which each number is the
+# sum of the two preceding ones, starting from 0 and 1.
 # This script generates a list of the first N fibonacci numbers.
 # Secondly, applied the map function and a lambda expression to
 # cube each fibonacci number and print the list.
