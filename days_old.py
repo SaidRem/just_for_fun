@@ -6,8 +6,8 @@ calculates your age in days.
 Account for leap days. Calc without using built-in functions.
 '''
 
-Month_in_leapy = (0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
-Month_in_non_leapy = (0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
+Month_in_leapy = (0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)    # Sequence of days in months in year.
+Month_in_non_leapy = (0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)    # Sequence of days in months in leap year.
 
 
 def leap_year(y):
