@@ -10,6 +10,7 @@
 # Output format
 # Print the item_name and net_price in order of its first
 # occurrence.
+# OrderedDict keeps order in the dictionary.
 
 from collections import OrderedDict
 
