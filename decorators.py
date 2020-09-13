@@ -1,5 +1,6 @@
 
 # Decorate with function.
+# Decorator wraps a function and changes its behavior.
 def decorator_func(orig_func):
     def wrapper_func(*args, **kwargs):
         print('Wrapper_func runs before orig_func '
