@@ -16,8 +16,9 @@ def my_timer(orig_f):
 
 @my_timer
 def my_func(n):
+    my_list = []
     for i in range(n):
-        d = i**i
+        my_list.append(i**2)
     return d
 
 
