@@ -1,10 +1,11 @@
 # 1. List comprehension.
 
 from random import randint
-my_list = [randint(1, 10) for _ in range(1, 1000)]
-# print(my_list)
 
-# 2 Zip function.
+my_list = [randint(1, 10) for _ in range(1, 1000)]
+
+
+# 2 Pack objects all in one, using "zip" function.
 
 names = ['Alice', 'Bob', 'Josh', 'Erika', 'Maria']
 ages = [23, 30, 43, 18, 20]
@@ -13,7 +14,7 @@ container = zip(names, ages, likes)
 for c in container:
     print('{} is {} year old and likes {}'.format(*c))
 
-# 3. Counter class from collections module.
+# 3. Count objects using "Counter" class from "collections" module.
 
 from collections import Counter
 
@@ -48,7 +49,7 @@ proc_stud_info(*student)
 student = dict(name='Alice', last_n='Smith', fav_topic='math', score='A')
 proc_stud_info(**student)
 
-# 6. Type annotation.
+# 6. Type annotation in function variables.
 
 
 def some_computations(a: int, b: int):
